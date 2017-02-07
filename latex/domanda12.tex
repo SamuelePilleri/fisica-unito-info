@@ -1,0 +1,33 @@
+\section{Leggi di Ohm microscopica e derivazione della legge
+	macroscopica a partire da quella microscopica.}
+Si definisce \textbf{Intensit\'a di corrente} la quantit\'a di carica che passa in un conduttore per unit\'a di tempo.
+$$ [I] = \left[\frac{Q}{t}\right] $$
+Per dare una definizione microscopica della legge di Ohm occorre considerare gli elettroni che si muovono all'interno di conduttore di sezione $S$. Applicando ai suoi estremi una differenza di potenziale si crea un campo elettrico, che fa muovere gli elettroni di una velocit\'a $v_d$ (velocit\'a di deriva) in modo collettivo e ordinato, oltre che del canonico moto casuale dovuto alla instabilit\'a dell'elettrone stesso.\\
+Ora la nuova definizione di intensit\'a di corrente \`e la seguente:
+$$
+I = n e v_d S
+$$
+Dove:
+\begin{itemize}
+	\item [n] {Il numero di elettroni che passano per unita di volume}
+	\item [e] {La carica dell'elettrone}
+	\item [$v_d$] {La velocit\'a di deriva}
+	\item [S] {La sezione del conduttore}
+\end{itemize}
+Ora si introduce la grandezza \textit{conduttivit\'a elettrica} indicata con $\sigma$ e il vettore $\vec{J} = \sigma \vec{E}$ "densit\'a di corrente".\\
+$$
+    \sigma = n e v_d
+$$
+$$
+    \rho = \frac{1}{\sigma}
+$$
+La densit\'a di corrente rappresenta la "facilit\'a" con cui gli elettroni si muovono all'interno del campo elettrico nel conduttore.
+Consideriamo un tratto di lunghezza $l$ del conduttore: allora si puo' affermare che (assumendo il campo elettrico ORTOGONALE alla sezione del conduttore):
+$$
+    I = \int{\vec{J} \cdot \vec{dS}} = \int{\sigma E \cdot \vec{dS}} = \sigma E S
+$$
+Considerando il campo elettrico uniforme, abbiamo che $E = \frac{V}{l}$, pertanto:
+$$
+    I = \sigma \frac{V}{l}S \rightarrow V = \frac{l}{\sigma S} \rightarrow V = RI
+$$
+$\hfill\square$

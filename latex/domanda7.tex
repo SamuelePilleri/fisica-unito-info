@@ -1,0 +1,58 @@
+\section{Definire potenziale, energia potenziale e lavoro del
+	campo elettrico e mostrare le relazioni tra queste
+	grandezze.}
+Per \textbf{Energia Potenziale Elettrica} di un sistema di cariche si intende il lavoro compiuto da tale sistema per potersi spostare da una configurazione all'infinito (dove per convenzione l'energia potenziale \`e nulla) da una configurazione data.
+Nel caso di due cariche puntiformi $q_1$ e $q_2$, in cui :
+$$
+   U_{q_1}(r) = 0 
+$$
+poich\'e \`e inserita per prima nel sistema
+$$
+   U_{q_1, q_2}(r) = \frac{1}{4 \pi \varepsilon_0} \frac{q_1 q_2}{r}
+$$
+poich\'e ora \`e soggetta a una forza fra $q_1$ e $q_2$.\\
+\\
+Il lavoro necessario a tale forza per muovere le cariche da una configurazione A a infinito  \`e:
+$$
+L_{A \rightarrow \infty} = 
+\int_A^{\infty}{\vec{F} \cdot \vec{ds}} = 
+\int_A^{\infty}{
+	\frac{1}{4 \pi \varepsilon_0} \frac{q_1 q_2}{r^2}\hat{u}_r \cdot \vec{ds}
+} =
+$$
+$$
+  \int_A^{\infty}{
+  	\frac{1}{4 \pi \varepsilon_0} \frac{q_1 q_2}{r^2}\vec{dr}
+  } = 
+  \frac{q_1 q_2}{4 \pi \varepsilon_0}
+  \left[
+      -\frac{1}{r}
+  \right]_A^{\infty} = 
+  \frac{q_1 q_2}{4 \pi \varepsilon_0} 
+  \left(
+     \frac{1}{r_A} - 0
+  \right) =
+$$
+$$
+  \frac{1}{4 \pi \varepsilon_0} \frac{q_1 q_2}{r_A}
+$$
+Per \textbf{Potenziale Elettrico} di una carica $Q$ si intende l'energia potenziale U di un sistema composto da $Q$ e una carica di prova $q_{test}$, cio\'e come :
+$$
+  V(r) = \frac{U}{q_{test}} = 
+  \frac{1}{4 \pi \varepsilon_0}
+  \frac{Q \cancel{q_{test}}}{r}
+  \frac{1}{\cancel{q_{test}}} =
+  \frac{1}{4 \pi \varepsilon_0} \frac{Q}{r}
+$$
+Per \textbf{Lavoro} del campo elettrico si intende il lavoro necessario per spostare una carica $q$ immersa in un campo elettrico $ \vec{E} $ dovuto a una carica $Q$ da un punto $A$ a un punto $B$ e corrisponde a :
+$$ 
+     L_{r_A \rightarrow r_B} = \int_{A}^{B}{q \vec{E} \cdot  \vec{ds}} =  
+     \frac{1}{4 \pi \varepsilon_0}\int_{A}^{B}{q \frac{Q}{r^2} \hat{r} \cdot \vec{ds}} = \frac{qQ}{4 \pi \varepsilon_0} \int_{A}^{B}{\frac{1}{r^2} \hat{r} \cdot \vec{ds}} =
+$$
+$$
+    \frac{qQ}{4 \pi \varepsilon_0} \int_{A}^{B}{\frac{1}{r^2} \vec{dr}} = \frac{qQ}{4 \pi \varepsilon_0} \left[-\frac{1}{r}\right]_A^B = \frac{qQ}{4 \pi \varepsilon_0} \left(-\frac{1}{r_B} + \frac{1}{r_A} \right) = 
+$$
+$$
+    \frac{qQ}{4 \pi \varepsilon_0 r_A} - \frac{qQ}{4 \pi \varepsilon_0 r_B} = U(r_A) - U(r_B)
+$$
+$\hfill\square$

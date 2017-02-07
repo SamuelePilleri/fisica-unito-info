@@ -1,0 +1,58 @@
+\section{Dimostrare che la forza di Coulomb è una forza
+	conservativa e discutere brevemente le conseguenze di
+	questo.}
+Si dice che una forza \`e conservativa quando:
+$$
+   L_{\vec{r}_a \rightarrow \vec{r}_b} = U(B) - U(A)
+$$
+Si definisce il lavoro come :
+$$
+   L_{\vec{r}_a \rightarrow \vec{r}_b} = 
+   \int_A^B{\vec{F_{\vec{r}_a \rightarrow \vec{r}_b}} \cdot \vec{ds}}
+$$
+Un'esempio di forza non conservativa \`e l'attrito.
+Per quanto riguarda la forza di Coulomb invece si puo' affermare che:
+\begin{displaymath}
+    L_{\vec{r}_a \rightarrow \vec{r}_b} =
+    \int_A^B{\vec{F_{\vec{r}_a \rightarrow \vec{r}_b}} \cdot \vec{ds}} =
+    \int_A^B{ 
+    	\frac{ 1 } { 4 \pi \varepsilon_0 } 
+    	\frac{ q_1 q_2 }{ (r_b - r_a)^2 } 
+        \hat{u}_{r_a \rightarrow r_b} \cdot \vec{ ds }
+        }
+\end{displaymath}
+Definiamo $\vec{r} = \vec{r}_b - \vec{r}_a$ e riscriviamo come
+\begin{displaymath}
+    \int_A^B{ 
+    	\frac{ 1 } { 4 \pi \varepsilon_0 } 
+    	\frac{ q_1 q_2 }{ r^2 } 
+    	\hat{u}_r \cdot \vec{ ds }
+    } = 
+    \int_A^B{ 
+    	\frac{ 1 } { 4 \pi \varepsilon_0 } 
+    	\frac{ q_1 q_2 }{ r^2 } 
+    	\vec{dr}
+    } =  
+  	\frac{ 1 } { 4 \pi \varepsilon_0 } 
+    \int_A^B{ 
+    	\frac{ q_1 q_2 }{ r^2 } 
+    	\vec{dr}
+    }
+\end{displaymath}
+\begin{displaymath}
+\frac{ 1 }{ 4 \pi \varepsilon_0 }
+\left[ 
+-\frac{ q_1 q_2 }{r}
+\right]_A^B = 
+\frac{ 1 }{ 4 \pi \varepsilon_0 }
+\left(
+    \frac{ q_1 q_2 }{r_A} - \frac{ q_1 q_2 }{r_B}
+\right) = 
+U(r_A) - U(r_B)
+\end{displaymath}
+Come conseguenza di questo si puo' affermare che il \textbf{Lavoro} compiuto dalla forza di Coulomb su un percorso chiuso \`e nullo:
+$$
+    L_{A \rightarrow B} + L_{B \rightarrow A} = 0
+$$
+Si puo' inoltre affermare che il Lavoro compiuto dalla Forza di Coulomb non dipende dal percorso fra A e B.
+$\hfill\square$

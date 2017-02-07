@@ -1,0 +1,61 @@
+\section{Circuiti RC: carica e scarica del condensatore.
+	Comportamento alla stazionarietà.}
+Per \textbf{Processo di carica} del condensatore si intende l'accumulo di carica sulle armature dello stesso quando \`e applicata una differenza di potenziale $\Delta V$.\\
+Allo stesso modo si definisce \textbf{Processo di scarica} del condensatore il rilascio delle cariche precedentemente accumulate, facendo generare allo stesso una differenza di potenziale.\\
+\textbf{Fase di carica} :\\
+Vale la seguente legge:
+$$
+    Q(t) = Q_{MAX}\left(1 - e^{-\frac{t}{RC}}\right)
+$$
+$$
+    Q(t) = C \Delta V\left(1 - e^{-\frac{t}{RC}}\right)	 
+$$
+\begin{itemize}
+	\item [$t < 0$] { Condensatore scarico, $\Delta V = 0$ }
+	\item [$t \rightarrow 0$] { 
+		Condensatore in carica, $\Delta V = \varepsilon$ 
+		carica il condensatore : \\
+	        $$
+	           Q(t) = Q_{MAX}\left(1 - e^{-\frac{0}{RC}}\right) = Q\left(1 - 1\right) = 0
+	        $$
+    }
+    \item [$t \rightarrow \infty$] { 
+    	Condensatore carico a regime,
+    	$\Delta V(t)$ carica il condensatore:
+    	$$
+    	    Q(t) = Q_{MAX}\left(1 - e^{-\frac{\infty}{RC}}\right) = 
+    	    Q_{MAX}\left(1 - e^{-\infty}\right) = 
+    	    Q_{MAX}\left(1 - 0\right) = Q_{MAX} = C \varepsilon
+    	$$
+    }
+\end{itemize}
+\textbf{ Fase di scarica } :
+Vale la seguente legge :
+$$
+    Q(t) = C \Delta V \left(e^{-\frac{t}{RC}}\right)
+$$
+\begin{itemize}
+	\item [$t < 0$] {
+		Il condensatore \`e carico. 
+		$\Delta V = \varepsilon$, 
+		$Q(t) = Q_{MAX} = C \varepsilon$ 
+	}
+	\item [$t \rightarrow 0$] {
+        Il condensatore inizia a scaricarsi.\\
+        $\Delta V = 0$, $Q(t) = Q_{MAX}\left(e^{-\frac{0}{RC}}\right) = 
+        Q_{MAX}\left(e^0\right) = C \varepsilon$\\
+        Si comporta come un \textbf{generatore di corrente} :
+        $$
+        \varepsilon_C = \frac{Q_C}{C}
+        $$
+	}
+	\item [$t \rightarrow \infty$] { 
+	    Il condensatore \`e scarico.\\
+	    $\Delta V = 0$, 
+    	$
+    	Q(t) = Q_{MAX}\left(e^{-\frac{\infty}{RC}}\right) = 
+    	Q_{MAX}\left(e^{-\infty}\right) = Q_{MAX} \cdot 0 = 0
+    	$ 
+	}
+\end{itemize}
+$\hfill\square$

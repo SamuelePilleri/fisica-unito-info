@@ -1,0 +1,66 @@
+\section{Enunciare la legge di Faraday-Lenz e discutere la
+	relazione con l'autoinduttanza.}
+Secondo la \textbf{Legge di Faraday-Lenz} :
+\begin{equation}
+	\varepsilon_{indotta} = -\frac{d\Phi_S(\vec{B})}{dt}
+\end{equation}
+Ovvero a una \textbf{variazione del flusso} del campo magnetico corrisponde una forza elettromotrice autoindotta che si oppone a tale variazione. (il flusso del campo magnetico puo' variare, ad esempio, per una \textbf{variazione della intensita di corrente} $i$).\\
+Come esempio di applicazione prendiamo un solenoide di lunghezza $l$:\\
+Facciamo variare $i$ e ci accorgiamo della $\varepsilon$ autoindotta, introducendo di conseguenza una $i_{indotta}$ , di verso opposto a quello della corrente nel solenoide (fenomeno conosciuto come $autoinduzione$).\\
+Sappiamo che:
+$$
+    \Phi_S(\vec{B}) = Li(t) = \oint_S{\vec{B} \cdot \hat{n}}
+$$
+Dove:
+\begin{itemize}
+	\item [$S$] {
+	    \`E la superficie della \textbf{sezione} della spira.	
+	}
+	\item [$\vec{B}$] {
+	    \`E il \textbf{campo magnetico}.
+	}
+	\item [$L$] {
+		\`E il \textbf{Coefficiente di Induttanza} (si misura in Henry $H$)
+	}
+	\item[$i(t)$] {
+	    \`E l'\textbf{intensit\'a di corrente} nel tempo.
+	}
+\end{itemize}
+Pertanto (assumendo che la induttanza $L$ non vari nel tempo):
+$$
+    \Phi_S(\vec{B}) = Li(t) \rightarrow \frac{d\Phi_S(\vec{B})}{dt} = L\frac{di}{dt}
+$$
+$$
+    \varepsilon_{indotta} = -L\frac{di}{dt}
+$$
+
+\pagebreak
+
+\noindent Sfruttando la \textbf{legge di Ampere}, siccome siamo in un solenoide :
+$$
+    i_{conc} = n l i_{sol}
+$$
+\noindent Dove : 
+\begin{itemize}
+    \item [$i_{conc}$] {
+    	Corrente concatenata alla circuitazione del solenoide.
+    }
+    \item [$n$] {
+        Numero di spire (avvolgimenti) \textit{per unit\'a di lunghezza}.
+    }
+    \item [$l$] {
+        Lunghezza del solenoide.
+    }
+    \item [$i_{sol}$] {
+        Corrente che scorre nel solenoide.
+    }
+\end{itemize}
+Pertanto: 
+$$
+    \varepsilon_{indotta} = -L\frac{di_{conc}}{dt} = -n l L \frac{di_{sol}}{dt}
+$$
+nel caso di un avvolgimento $n = 1$ quindi:
+$$
+    \varepsilon_{indotta} = -l L \frac{di_{sol}}{dt}
+$$
+$\hfill\square$
