@@ -1,1 +1,1 @@
-Qui ci son oi latex delle domande singole.
+Qui ci sono i latex delle domande singole.
